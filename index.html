@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/fontawesome.js"></script>
+  </head>
+
+  <body>
+    <header class="container mainContainer p-0 w-100 bg-white text-dark">
+      <menu class="flex_sides">
+        <div class="logo">
+          <img src="./images/logo.svg" width="100px" alt="" />
+        </div>
+        <div class="navMain">
+          <nav>
+            <a href="#" class="nav_link active m-0">Home</a>
+            <a href="#" class="nav_link">About</a>
+            <a href="#" class="nav_link">Services</a>
+            <a href="#" class="nav_link">Home</a>
+            <a href="#" class="nav_link">Home</a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-solid fa-tty"></i></a>
+            <a href="#" class="action_btn">Contact us</a>
+          </nav>
+        </div>
+        <button class="navToggleBtn">
+          <span
+            class="navBtnBar navBtnBar1"
+            style="height: 2px; transform: rotate(0deg); top: 0px; left: 0px"
+          ></span>
+          <span
+            class="navBtnBar navBtnBar2"
+            style="height: 2px; transform: rotate(0deg); top: 0px; left: 0px"
+          ></span>
+          <span
+            class="navBtnBar navBtnBar3"
+            style="height: 2px; transform: rotate(0deg); top: 0px; left: 0px"
+          ></span>
+        </button>
+      </menu>
+    </header>
+    <div class="banner container p-0 w-100 mainContainer">
+      <div class="imgContainer">
+        <img src="./images/bannerImg2.jpg" class="img-fluid" alt="" />
+      </div>
+      <div class="imgTxt_wrapper">
+        <div class="banner_img_txt">
+          <h1 class="m-0">
+            Find Your Next <span class="primary_color">Flat</span> or
+            <span class="primary_color">Poperty</span>
+          </h1>
+          <p class="desc_font_size">Search here your dream</p>
+          <div class="searchBar my-2">
+            <form action="" class="flex_all_center">
+              <div class="bn_1st_form_div location">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span>
+                  <input
+                    type="text"
+                    class="input_brd_left"
+                    name="location"
+                    placeholder="Please Enter"
+                  />
+                </span>
+              </div>
+              <div class="bn_1st_form_div cotegry side_brd">
+                <span><i class="fa-solid fa-table-cells-large"></i></span>
+                <span>
+                  <input
+                    type="text"
+                    class="input_brd_left"
+                    name="location"
+                    placeholder="Please Enter"
+                  />
+                </span>
+              </div>
+              <div class="bn_2nd_form_div keyword side_brd">
+                <span><i class="fa-solid fa-question"></i></span>
+                <span>
+                  <input
+                    type="text"
+                    name="location"
+                    class="brd_none"
+                    placeholder="Please Enter"
+                  />
+                </span>
+              </div>
+              <button
+                type="submit"
+                class="bn_2nd_form_div flex_all_center primary_bg_color"
+              >
+                <span>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <span>Submit</span>
+              </button>
+            </form>
+          </div>
+          <p class="desc_font_size banner_desc_2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+            veritatis alias libero odit ab iure sit! Assumenda velit similique
+            ullam voluptates. Quidem, unde debitis minus voluptatem inventore
+            cupiditate recusandae illo.
+          </p>
+          <div class="social_media_icons flex_all_center text-center">
+            <div class="text-center">
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section_top_padd body_side_padd properties container p-0 w-100 mainContainer">
+      <div class="property_wrapper">
+        <div class="property_top_1 flex_sides">
+          <div class="section_heading">
+            <h2 class="m-0 font_weight_600">Features Properties</h2>
+            <span class="brd_bottom"></span>
+          </div>
+          <div class="handle_btn">
+            <button><i class="fa-solid fa-chevron-left"></i></button>
+            <button><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="property_boxes" totalCards="4">
+          <div class="">
+            <div class="property_card">
+              <div class="property_box_img">
+                <div class="property_box_img_wrapper position-relative">
+                  <img src="./images/img4.jpg" class="img-fluid" alt="" />
+                  <div class="property_img_txt">
+                    <h5>House Name</h5>
+                  </div>
+                </div>
+                <div class="property_img_title">
+                  <span class="tite_arrow">For Buy</span>
+                </div>
+              </div>
+              <div class="property_box_desc">
+                <h4>Park Avenue Apartment</h4>
+                <p class="property_timer">
+                  <span><i class="fa-solid fa-chart-area"></i></span>
+                  <span>1200 sq fit</span>
+                </p>
+                <p class="property_location">
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                  <span>Mera Road</span>
+                </p>
+                <p class="property_rate flex_sides">
+                  <span class="primary_color">$120000</span>
+                  <a href="#" class="primary_bg_color">Get Details</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="property_card">
+              <div class="property_box_img">
+                <div class="property_box_img_wrapper position-relative">
+                  <img src="./images/img5.jpg" class="img-fluid" alt="" />
+                  <div class="property_img_txt">
+                    <h5>House Name</h5>
+                  </div>
+                </div>
+                <div class="property_img_title">
+                  <span class="tite_arrow">For Buy</span>
+                </div>
+              </div>
+              <div class="property_box_desc">
+                <h4>Luxury Villa</h4>
+                <p class="property_timer">
+                  <span><i class="fa-solid fa-chart-area"></i></span>
+                  <span>1200 sq fit</span>
+                </p>
+                <p class="property_location">
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                  <span>Bhiwandi Markeet</span>
+                </p>
+                <p class="property_rate flex_sides">
+                  <span class="primary_color">$120000</span>
+                  <a href="#" class="primary_bg_color">Get Details</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" m-0">
+            <div class="property_card">
+              <div class="property_box_img">
+                <div class="property_box_img_wrapper position-relative">
+                  <img src="./images/img6.jpg" class="img-fluid" alt="" />
+                  <div class="property_img_txt">
+                    <h5>House Name</h5>
+                  </div>
+                </div>
+                <div class="property_img_title">
+                  <span class="tite_arrow">For Buy</span>
+                </div>
+              </div>
+              <div class="property_box_desc">
+                <h4>Home For Sale</h4>
+                <p class="property_timer">
+                  <span><i class="fa-solid fa-chart-area"></i></span>
+                  <span>1200 sq fit</span>
+                </p>
+                <p class="property_location">
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                  <span>Mumbra Markeet</span>
+                </p>
+                <p class="property_rate flex_sides">
+                  <span class="primary_color">$120000</span>
+                  <a href="#" class="primary_bg_color">Get Details</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" m-0">
+            <div class="property_card">
+              <div class="property_box_img">
+                <div class="property_box_img_wrapper position-relative">
+                  <img src="./images/img7.jpg" class="img-fluid" alt="" />
+                  <div class="property_img_txt">
+                    <h5>House Name</h5>
+                  </div>
+                </div>
+                <div class="property_img_title">
+                  <span class="tite_arrow">For Buy</span>
+                </div>
+              </div>
+              <div class="property_box_desc">
+                <h4>Flat For Sale</h4>
+                <p class="property_timer">
+                  <span><i class="fa-solid fa-chart-area"></i></span>
+                  <span>1200 sq fit</span>
+                </p>
+                <p class="property_location">
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                  <span>Kallyan Road</span>
+                </p>
+                <p class="property_rate flex_sides">
+                  <span class="primary_color">$120000</span>
+                  <a href="#" class="primary_bg_color">Get Details</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="property_boxes_slider_dots">
+          <p class="m-0 flex_all_center">
+            <span class="active"></span>
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section_top_padd body_side_padd how_to_work working_method container mainContainer p-0 w-100 text-white">
+      <div class="heading_part text-center">
+        <div class="section_heading">
+          <h2 class="m-0">
+            See How it <span class="primary_color">Work</span>
+          </h2>
+          <span class="brd_bottom"></span>
+        </div>
+      </div>
+      <div class="working_method_wrapper 4_childrens">
+        <div class="working_method_cotegry text-center">
+          <p class="primary_bg_color active icon_wrapper">
+            <i class="fa-solid fa-user-tie"></i>
+          </p>
+          <h4>Contact us</h4>
+          <p class="desc_font_size">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="working_method_cotegry text-center">
+          <p class="primary_bg_color icon_wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </p>
+          <h4>Search your dream</h4>
+          <p class="desc_font_size">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="working_method_cotegry text-center">
+          <p class="primary_bg_color icon_wrapper">
+            <i class="fa-solid fa-chart-area"></i>
+          </p>
+          <h4>Visit us</h4>
+          <p class="desc_font_size">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="working_method_cotegry text-center">
+          <p class="primary_bg_color icon_wrapper">
+            <i class="fa-solid fa-users"></i>
+          </p>
+          <h4>Meet our agents</h4>
+          <p class="desc_font_size">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section_top_padd body_side_padd short_dashboard container mainContainer p-0 text-white">
+      <div class="short_dashboard_wrapper 4_childrens">
+        <div class="dahsborad_cotegry">
+          <div class="project_iconer">
+            <i class="fa-solid fa-city"></i>
+          </div>
+          <div class="project_summery">
+            <p class="project_summer_counter">200+</p>
+            <p class="project_cotegry_name desc_font_size">Project Completed</p>
+          </div>
+        </div>
+        <div class="dahsborad_cotegry">
+          <div class="project_iconer">
+            <i class="fa-solid fa-building-shield"></i>
+          </div>
+          <div class="project_summery">
+            <p class="project_summer_counter">100+</p>
+            <p class="project_cotegry_name desc_font_size">Our Live Projects</p>
+          </div>
+        </div>
+        <div class="dahsborad_cotegry">
+          <div class="project_iconer">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="project_summery">
+            <p class="project_summer_counter">200+</p>
+            <p class="project_cotegry_name desc_font_size">
+              Satisfied Customers
+            </p>
+          </div>
+        </div>
+        <div class="dahsborad_cotegry">
+          <div class="project_iconer">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <div class="project_summery">
+            <p class="project_summer_counter">200+</p>
+            <p class="project_cotegry_name desc_font_size">Certified Agents</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="move_top_extra explore section_top_padd body_side_padd container mainContainer p-0 text-dark">
+      <div class="explore_wrapper">
+        <div class="explore_img">
+          <div class="explore_img_wrapper">
+            <img src="./images/image.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="explore_text">
+          <h3 class="font_weight_700">
+            21 Years of Expirence, We Are Ready To Help You
+          </h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            possimus dolorum, officiis, aliquam delectus sit quod quae placeat
+            velit perspiciatis natus quis quaerat blanditiis minus ipsum!
+            Laborum repellat dolorem explicabo?
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="font_weight_700">Office</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-6">
+              <h5 class="font_weight_700">House</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-6">
+              <h5 class="font_weight_700">Ville</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-6">
+              <h5 class="font_weight_700">Apartment</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-lg-0 gallery section_top_padd body_side_padd container mainContainer p-0 w-100 text-dark">
+      <div class="gallery_wrapper">
+        <div class="heading_part text-center">
+          <div class="section_heading">
+            <h2 class="m-0">Our <span class="primary_color">Gallery</span></h2>
+            <span class="brd_bottom"></span>
+          </div>
+        </div>
+        <div class="row property_boxes">
+          <div class="col-lg-4 text-center">
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <img src="./images/img4.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="property_box_desc">
+                  <h4>Park Avenue Apartment</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 text-center">
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <img src="./images/img4.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="property_box_desc">
+                  <h4>Park Avenue Apartment</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 text-center">
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <img src="./images/img4.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="property_box_desc">
+                  <h4>Park Avenue Apartment</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 text-center">
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <img src="./images/img4.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="property_box_desc">
+                  <h4>Park Avenue Apartment</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 text-center">
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <img src="./images/img4.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="property_box_desc">
+                  <h4>Park Avenue Apartment</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 text-center">
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <img src="./images/img4.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="property_box_desc">
+                  <h4>Park Avenue Apartment</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section_top_padd body_side_padd services container mainContainer p-0 w-100 text-white">
+      <div class="heading_part text-center">
+        <div class="section_heading">
+          <p
+            class="m-0 my-2 primary_color desc_font_size section_short_heading"
+          >
+            Our Services
+          </p>
+          <h2 class="m-0">We Proivide Great Services</h2>
+          <span class="brd_bottom"></span>
+        </div>
+      </div>
+      <div class="working_method_wrapper 4_childrens">
+        <div class="services_card plot working_method_cotegry text-center">
+          <p class="primary_bg_color active icon_wrapper">
+            <i class="fa-solid fa-map-location"></i>
+          </p>
+          <h4>Plots</h4>
+          <p class="desc_font_size">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="services_card flat working_method_cotegry text-center">
+          <p class="primary_bg_color icon_wrapper">
+            <i class="fa-solid fa-house-user"></i>
+          </p>
+          <h4>Flats</h4>
+          <p class="desc_font_size">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="services_card property working_method_cotegry text-center">
+          <p class="primary_bg_color icon_wrapper">
+            <i class="fa-solid fa-building-wheat"></i>
+          </p>
+          <h4>Property</h4>
+          <p class="desc_font_size">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="services_card rent working_method_cotegry text-center">
+          <p class="primary_bg_color icon_wrapper">
+            <i class="fa-solid fa-retweet"></i>
+          </p>
+          <h4>Rent</h4>
+          <p class="desc_font_size">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="padding_bottom_0px our_agents section_top_padd body_side_padd container mainContainer p-0 w-100 text-dark">
+      <div class="gallery_wrapper">
+        <div class="heading_part text-center">
+          <div class="section_heading">
+            <h2 class="m-0">
+              Meet Our <span class="primary_color">Team</span>
+            </h2>
+            <span class="brd_bottom"></span>
+          </div>
+        </div>
+        <div class="row property_boxes">
+          <div class="col-lg-3 text-left">
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <img src="./images/img4.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="property_box_desc flex_sides">
+                  <div class="left">
+                    <h5 class="member_name font_weight_700 m-0">
+                      Rahmatullah Khan
+                    </h5>
+                    <p class="member_post">Founder</p>
+                  </div>
+                  <div class="right">
+                    <i class="fa-solid fa-user-tie"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 text-left">
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <img src="./images/img4.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="property_box_desc flex_sides">
+                  <div class="left">
+                    <h5 class="member_name font_weight_700 m-0">Abo Umama</h5>
+                    <p class="member_post">Manager</p>
+                  </div>
+                  <div class="right">
+                    <i class="fa-solid fa-user-tie"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 text-left">
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <img src="./images/img4.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="property_box_desc flex_sides">
+                  <div class="left">
+                    <h5 class="member_name font_weight_700 m-0">User1</h5>
+                    <p class="member_post">Agent</p>
+                  </div>
+                  <div class="right">
+                    <i class="fa-solid fa-user-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 text-left">
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <img src="./images/img4.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="property_box_desc flex_sides">
+                  <div class="left">
+                    <h5 class="member_name font_weight_700 m-0">User2</h5>
+                    <p class="member_post">Agent</p>
+                  </div>
+                  <div class="right">
+                    <i class="fa-solid fa-user-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rating section_top_padd body_side_padd container mainContainer p-0 w-100 text-dark">
+      <div class="rating_wrapper">
+        <div class="heading_part text-center">
+          <div class="section_heading">
+            <h2 class="m-0">
+              Our <span class="primary_color">Testimmonials</span>
+            </h2>
+            <span class="brd_bottom"></span>
+          </div>
+        </div>
+        <div class="rating_cards" totalCards="3">
+          <div class="rating_card_wrapper">
+            <div class="rating_card">
+              <div class="rating_user_data d-flex">
+                <div class="rating_user_img">
+                  <img src="./images/rater_1.jpg" width="100px" alt="" />
+                </div>
+                <div class="rating_user_names">
+                  <h5 class="m-0 font_weight_700 rating_user_name">User1</h5>
+                  <p class="m-0 desc_font_size rating_user_post">Post</p>
+                  <div class="rating_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="rating_txt_user">
+                <p class="m-0">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi est minima similique beatae, atque quidem consectetur
+                    commodi dolor laudantium, maxime dolorem facere? Animi est
+                    quidem iure inventore adipisci velit corrupti?</span>
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rating_card_wrapper">
+            <div class="rating_card">
+              <div class="rating_user_data d-flex">
+                <div class="rating_user_img">
+                  <img src="./images/rater_2.jpg" width="100px" alt="" />
+                </div>
+                <div class="rating_user_names">
+                  <h5 class="m-0 font_weight_700 rating_user_name">User1</h5>
+                  <p class="m-0 desc_font_size rating_user_post">Post</p>
+                  <div class="rating_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="rating_txt_user">
+                <p class="m-0">
+                  <i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi est minima similique beatae, atque quidem consectetur
+                  commodi dolor laudantium, maxime dolorem facere? Animi est
+                  quidem iure inventore adipisci velit corrupti?
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rating_card_wrapper">
+            <div class="rating_card">
+              <div class="rating_user_data d-flex">
+                <div class="rating_user_img">
+                  <img src="./images/rater_3.jpg" width="100px" alt="" />
+                </div>
+                <div class="rating_user_names">
+                  <h5 class="m-0 font_weight_700 rating_user_name">User1</h5>
+                  <p class="m-0 desc_font_size rating_user_post">Post</p>
+                  <div class="rating_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="rating_txt_user">
+                <p class="m-0">
+                  <i class="fa-solid fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi est minima similique beatae, atque quidem consectetur
+                  commodi dolor laudantium, maxime dolorem facere? Animi est
+                  quidem iure inventore adipisci velit corrupti?
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="maps section_top_padd body_side_padd container mainContainer p-0 w-100 text-dark">
+      <div class="gallery_wrapper">
+        <div class="heading_part text-center">
+          <div class="section_heading">
+            <h2 class="m-0">
+              Visit Our <span class="primary_color">Area</span>
+            </h2>
+            <span class="brd_bottom"></span>
+          </div>
+        </div>
+        <div class="row property_boxes padding_bottom_0px">
+          <div class="col-lg-4 text-center office_map">
+            <h2 class="font_weight_500">
+              <i class="fa-solid fa-building-circle-check primary_color"></i>
+              <span>Office</span>
+            </h2>
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.70906702869!2d73.69815139367944!3d18.524870612673507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1709486644467!5m2!1sen!2sin"
+                      width="600"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h2 class="font_weight_500">
+              <i class="fa-solid fa-map-location primary_color"></i>
+              <span>Plots</span>
+            </h2>
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.6729237785!2d72.71637020684099!3d19.082502007739045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1709486510020!5m2!1sen!2sin"
+                      width="600"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 text-center flat_property_map">
+            <h2 class="font_weight_500">
+              <i class="fa-solid fa-building-wheat primary_color"></i>
+              <span>Plots And Property</span>
+            </h2>
+            <a href="#">
+              <div class="property_card">
+                <div class="property_box_img">
+                  <div class="property_box_img_wrapper position-relative">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.70906702869!2d73.69815139367944!3d18.524870612673507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1709486644467!5m2!1sen!2sin"
+                      width="600"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subsciption section_top_padd body_side_padd container mainContainer p-0 text-white">
+      <div class="short_dashboard_wrapper 4_childrens">
+        <div class="subscribe_desc">
+          <h4 class="text-dark m-0 font_weight_700">
+            Subscribe to Our Newsletter
+          </h4>
+          <p class="desc_font_size m-0 text-dark">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+            autem similique, distinctio delectus
+          </p>
+        </div>
+        <div class="subscribe_form">
+          <form action="" class="flex_all_center">
+            <div class="subscribe_form_input">
+              <input
+                type="email"
+                class="desc_font_size"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="subscribe_form_btn">
+              <input type="submit" class="desc_font_size" value="Subscribe" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="body_side_padd container mainContainer p-0 w-100 text-white bg-dark">
+      <div class="ft_wrapper flex_sides">
+        <div class="company_short_desc w-100">
+          <div class="logo">
+            <h2 class="primary_color">MY LOGO</h2>
+            <!-- <img src="./images/rater_3.jpg" class="img-fluid" alt="" /> -->
+          </div>
+          <div class="company_short_desc_txt">
+            <p class="m-0 desc_font_size">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates ut nisi ipsum a vitae deleniti. Consectetur deleniti
+              magnam,
+            </p>
+          </div>
+          <div class="social_media_icons flex_all_center text-center">
+            <div class="text-left">
+              <a href="#" class="icon_wrapper"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="#" class="icon_wrapper"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="icon_wrapper"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="icon_wrapper"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="popular_searches">
+          <h4>POULAR SEARCHE</h4>
+          <div class="popular_searches_links ft_links">
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+          </div>
+        </div>
+        <div class="quick_links_wrapper">
+          <h4>QUICK LINKS</h4>
+          <div class="quick_links ft_links">
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+          </div>
+        </div>
+        <div class="top_cotegries">
+          <h4>TOP COTEGRIES</h4>
+          <div class="top_cotegries_links ft_links">
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+            <p class="m-0"><a href="#">Link1</a></p>
+          </div>
+        </div>
+        <div class="office_deatils w-100">
+          <h4>GET IN TOUCH</h4>
+          <div class="our_number">
+            <div class="icon_wrapper">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="number_details">
+              <h5 class="m-0 font_weight_600">Number</h5>
+              <a href="#">
+                <h6 class="m-0 font_weight_500">+91 78565656</h6>
+              </a>
+            </div>
+          </div>
+          <div class="our_email">
+            <div class="icon_wrapper">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="email_details">
+              <h5 class="m-0 font_weight_600">Email</h5>
+              <a href="#">
+                <h6 class="m-0 font_weight_500">abcd@gmail.com</h6>
+              </a>
+            </div>
+          </div>
+          <div class="our_address">
+            <div class="icon_wrapper">
+              <i class="fa-solid fa-house-chimney"></i>
+            </div>
+            <div class="email_details">
+              <h5 class="m-0 font_weight_600">Address</h5>
+              <a href="#">
+                <h6 class="m-0 font_weight_500">Abc Park, Land 1123 Mumbai</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy_right">
+        <p class="m-0 text-white">
+          <h6>Copyrights © R.K Builder. All rights reserved.</h6>
+          <h6>Powered By Stand Make Tech</h6>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="./js/script.js"></script>
