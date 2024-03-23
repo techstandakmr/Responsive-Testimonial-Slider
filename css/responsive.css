@@ -555,7 +555,7 @@
     }
     .properties .property_boxes>div {
         width: 100% !important;
-        padding: 0px 0px !important;
+        padding: 0px 8px !important;
     }
     .property_box_desc .property_rate {
         margin-top: 10px !important;
@@ -793,7 +793,7 @@
         padding-right: 26px !important;
     }
     .rating_cards .rating_card_wrapper{
-        padding: 0px;
+        padding: 0px 6px;
     }
     .rating_card {
         padding: 32px 12px;

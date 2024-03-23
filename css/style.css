@@ -31,9 +31,14 @@ h4 span,
 h5 span,
 h6 span {
     font-family: 'Raleway', sans-serif !important;
-    /* font-family: 'Montserrat', sans-serif; */
 }
-
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #212529 !important;
+}
 .font_weight_500 {
     font-weight: 500;
 }
