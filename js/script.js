@@ -5,12 +5,18 @@ window.onload = function () {
     function cards_slides_setup(cards_container, card_view, totalCards) {
         let cards = [...cards_container.children]
         let view_card = cards.slice(0, card_view)
+        cards
+            .slice(-view_card)
+            .reverse()
+            .forEach((card) => {
+                cards_container.insertAdjacentHTML("afterbegin", card.outerHTML);
+            });
         view_card.forEach(async (item) => {
             cards_container.innerHTML += item.outerHTML
             cards = [...cards_container.children]
         })
 
-        let all_cards = parseInt(totalCards) + parseInt(card_view)
+        let all_cards = parseInt(totalCards) + parseInt(card_view) * 2
         let extra_cards_unes = cards.length - all_cards
         if (cards.length > all_cards) {
             extra_cards_unes = cards.length - all_cards
@@ -32,39 +38,74 @@ window.onload = function () {
     }
 
     cards_slides_setup(rating_cards_container, rating_card_view, rating_cards_qty)
-    let resizeTimer;
 
-    let rating_card_position_num = 0;
-    function handleResize() {
+    // Function to be called when the window is resized
+    let isDragging = false,
+        isAutoPlay = true,
+        startX,
+        startScrollLeft,
+        timeoutId;
+    function handleResize(cards_container) {
         setTimeout(() => {
-            let rating_cards = [...rating_cards_container.children]
-            let rating_card_width = rating_cards_container.children[0].offsetWidth
-            // Clear the previous interval if it exists
-            clearInterval(resizeTimer);
-            // Set a new interval
-            resizeTimer = setInterval(function () {
-                rating_card_position_num++
-                rating_cards.forEach((item) => {
-                    let item_css = getComputedStyle(item)
-                    let item_padding = parseInt(item_css.paddingRight) / 2
-                    let item_width = rating_card_width + item_padding
-                    let rating_card_moving_position = item.style.transform
-                    rating_card_moving_position = rating_card_moving_position.replace(/[^\d.]/g, '')
-                    item.style.transform = `translatex(-${item_width * rating_card_position_num}px)`
-                    item.style.transitionDuration = '0.5s'
-                    if (rating_card_position_num - 1 == rating_cards_qty) {
-                        rating_card_position_num = 0;
-                        rating_cards.forEach((item) => {
-                            item.style.transitionDuration = `0.0s`
-                            item.style.transform = `translatex(0px)`
-                        })
-                    }
-                })
+            let all_cards = [...cards_container.children]
+            let card_width = all_cards[0].offsetWidth
+            cards_container.classList.add("no_transition");
+            cards_container.scrollLeft = cards_container.offsetWidth;
+            cards_container.classList.remove("no_transition");
 
-            }, 3000); // Change 500 to your desired interval time
+            const dragStart = (e) => {
+                isDragging = true;
+                cards_container.classList.add("card_dragging");
+                startX = e.pageX;
+                startScrollLeft = carousel.scrollLeft;
+                let d = startScrollLeft - (e.pageX - startX);
+            };
+
+            const dragging = (e) => {
+                if (!isDragging) return; // if isDragging is false return from here
+                // Updates the scroll position of the carousel based on the cursor movement
+                cards_container.scrollLeft = startScrollLeft - (e.pageX - startX);
+            };
+
+            const dragStop = () => {
+                isDragging = false;
+                cards_container.classList.remove("card_dragging");
+            };
+
+            const infiniteScroll = () => {
+                if (cards_container.scrollLeft === 0) {
+                    cards_container.classList.add("no_transition");
+                    cards_container.scrollLeft = cards_container.scrollWidth - 2 * cards_container.offsetWidth;
+                    cards_container.classList.remove("no_transition");
+                }
+                else if (
+                    Math.ceil(cards_container.scrollLeft) ===
+                    cards_container.scrollWidth - cards_container.offsetWidth
+                ) {
+                    cards_container.classList.add("no_transition");
+                    cards_container.scrollLeft = cards_container.offsetWidth;
+                    cards_container.classList.remove("no_transition");
+                }
+
+                clearTimeout(timeoutId);
+                if (!cards_container.matches(":hover")) autoPlay();
+            };
+            const autoPlay = () => {
+                timeoutId = setTimeout(
+                    () => (cards_container.scrollLeft += card_width),
+                    2500
+                );
+            };
+            autoPlay();
+
+            cards_container.addEventListener("mousedown", dragStart);
+            cards_container.addEventListener("mousemove", dragging);
+            document.addEventListener("mouseup", dragStop);
+            cards_container.addEventListener("scroll", infiniteScroll);
         }, 1000)
     }
-    handleResize()
+
+    handleResize(rating_cards_container)
 
     window.onresize = function () {
         let rating_cards_container = document.querySelector('.rating_cards')
@@ -79,8 +120,7 @@ window.onload = function () {
         } else if (window.innerWidth <= 360) {
             rating_card_view = 1
         }
-
-        handleResize()
+        cards_slides_setup(property_cards_container, property_card_view, property_cards_qty)
         cards_slides_setup(rating_cards_container, rating_card_view, rating_cards_qty)
     }
 }
